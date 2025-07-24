@@ -1,0 +1,46 @@
+hello-robot@stretch-re2-2068:~/Downloads$ REx_dynamixel_id_scan.py /dev/hello-dynamixel-wrist
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+
+----------- Deprecation Warning -----------
+Your robot params are configured to load DexWrist2 params from Stretch Tool Share
+Support for the DexWrist2 has moved to Stretch Body
+ 1) Open stretch_user_params.yaml and stretch_configuration_params.yaml in
+    the ~/stretch_user/stretch-yyy-xxxx directory.
+ 2) Locate the following text in one of those files and remove it:
+     params: stretch_tool_share.stretch_dex_wrist.params
+     or
+     params:
+      - stretch_tool_share.stretch_dex_wrist.params
+More information can be found at: https://github.com/hello-robot/stretch_body/pull/272
+-------------------------------------------
+
+Scanning bus /dev/hello-dynamixel-wrist
+Checking ID 0
+Checking ID 1
+Checking ID 2
+Checking ID 3
+Checking ID 4
+Checking ID 5
+Checking ID 6
+Checking ID 7
+Checking ID 8
+Checking ID 9
+Checking ID 10
+Checking ID 11
+Checking ID 12
+Checking ID 13
+Checking ID 14
+Checking ID 15
+Checking ID 16
+Checking ID 17
+Checking ID 18
+Checking ID 19
+Checking ID 20
+Checking ID 21
+Checking ID 22
+Checking ID 23
+Checking ID 24
+Found 0  servos on bus /dev/hello-dynamixel-wrist
+

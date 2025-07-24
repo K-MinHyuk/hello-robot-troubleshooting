@@ -1,0 +1,817 @@
+hello-robot@stretch-re2-2068:~/Downloads$ stretch_configure_tool.py
+
+----------- Deprecation Warning -----------
+Your robot params are configured to load DexWrist2 params from Stretch Tool Share
+Support for the DexWrist2 has moved to Stretch Body
+ 1) Open stretch_user_params.yaml and stretch_configuration_params.yaml in
+    the ~/stretch_user/stretch-yyy-xxxx directory.
+ 2) Locate the following text in one of those files and remove it:
+     params: stretch_tool_share.stretch_dex_wrist.params
+     or
+     params:
+      - stretch_tool_share.stretch_dex_wrist.params
+More information can be found at: https://github.com/hello-robot/stretch_body/pull/272
+-------------------------------------------
+
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Loading...
+ERROR: Unable to find wrist hardware. Contact Hello Robot Support.
+hello-robot@stretch-re2-2068:~/Downloads$ ^C
+hello-robot@stretch-re2-2068:~/Downloads$ ^C
+hello-robot@stretch-re2-2068:~/Downloads$ gedit 
+hello-robot@stretch-re2-2068:~/Downloads$ stretch_params.py
+
+----------- Deprecation Warning -----------
+Your robot params are configured to load DexWrist2 params from Stretch Tool Share
+Support for the DexWrist2 has moved to Stretch Body
+ 1) Open stretch_user_params.yaml and stretch_configuration_params.yaml in
+    the ~/stretch_user/stretch-yyy-xxxx directory.
+ 2) Locate the following text in one of those files and remove it:
+     params: stretch_tool_share.stretch_dex_wrist.params
+     or
+     params:
+      - stretch_tool_share.stretch_dex_wrist.params
+More information can be found at: https://github.com/hello-robot/stretch_body/pull/272
+-------------------------------------------
+
+############################################################ Parameters for stretch-re2-2068 ############################################################
+Origin                                                                 Parameter                                                              Value                         
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+stretch_body.robot_params.nominal_system_params                        param.logging.version                                                  1                             
+stretch_body.robot_params.nominal_system_params                        param.logging.disable_existing_loggers                                 True                          
+stretch_body.robot_params.nominal_system_params                        param.logging.root.level                                               DEBUG                         
+stretch_body.robot_params.nominal_system_params                        param.logging.root.handlers                                            ['console_handler', 'file_handler']
+stretch_body.robot_params.nominal_system_params                        param.logging.root.propagate                                           False                         
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.console_handler.class                           logging.StreamHandler         
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.console_handler.level                           INFO                          
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.console_handler.formatter                       default_console_formatter     
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.file_handler.class                              logging.FileHandler           
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.file_handler.level                              DEBUG                         
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.file_handler.formatter                          default_file_formatter        
+stretch_body.robot_params.nominal_system_params                        param.logging.handlers.file_handler.filename                           /home/hello-robot/stretch_user/log/stretch_body_logger/stretchbody_20250724162629.log
+stretch_body.robot_params.nominal_system_params                        param.logging.formatters.default_console_formatter.format              [%(levelname)s] [%(name)s]: %(message)s
+stretch_body.robot_params.nominal_system_params                        param.logging.formatters.brief_console_formatter.format                %(message)s                   
+stretch_body.robot_params.nominal_system_params                        param.logging.formatters.default_file_formatter.format                 [%(levelname)-8s] [%(asctime)s.%(msecs)03d] [%(name)s]: %(message)s
+stretch_body.robot_params.nominal_system_params                        param.logging.formatters.default_file_formatter.datefmt                %m/%d/%Y %H:%M:%S             
+stretch_body.robot_params.nominal_system_params                        param.system_check.show_sw_exc                                         False                         
+stretch_body.robot_params.nominal_params                               param.supported_eoa                                                    ['tool_stretch_dex_wrist', 'tool_stretch_gripper', 'tool_none', 'eoa_wrist_dw3_tool_nil', 'eoa_wrist_dw3_tool_sg3']
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.device_info                               EndOfArm chain for original DexWrist with 'straight gripper'. Compatible RE2. Imported from tool_share.
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.py_class_name                             ToolStretchDexWrist           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.py_module_name                            stretch_body.end_of_arm_tools 
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.use_group_sync_read                       1                             
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.retry_on_comm_failure                     1                             
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.baud                                      115200                        
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.dxl_latency_timer                         64                            
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.arm                                  0.0                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.lift                                 0.2                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.stretch_gripper                      0.0                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.wrist_pitch                          0.0                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.wrist_roll                           0.0                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.stow.wrist_yaw                            3.0                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.stretch_gripper.py_class_name     StretchGripper                
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.stretch_gripper.py_module_name    stretch_body.stretch_gripper  
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.stretch_gripper.device_params     RE2V0_stretch_gripper         
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_pitch.py_class_name         WristPitch                    
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_pitch.py_module_name        stretch_body.wrist_pitch      
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_pitch.device_params         RE2V0_wrist_pitch_DW2         
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_roll.py_class_name          WristRoll                     
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_roll.py_module_name         stretch_body.wrist_roll       
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_roll.device_params          RE2V0_wrist_roll_DW2          
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_yaw.py_class_name           WristYaw                      
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_yaw.py_module_name          stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.tool_stretch_dex_wrist.devices.wrist_yaw.device_params           RE2V0_wrist_yaw               
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.device_info                                 EndOfArm chain with just Yaw  / Gripper joints for standard RE2
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.use_group_sync_read                         1                             
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.retry_on_comm_failure                       1                             
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.baud                                        115200                        
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.dxl_latency_timer                           64                            
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.py_class_name                               ToolStretchGripper            
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.py_module_name                              stretch_body.end_of_arm_tools 
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.stow.stretch_gripper                        0                             
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.stow.wrist_yaw                              3.4                           
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.stretch_gripper.py_class_name       StretchGripper                
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.stretch_gripper.py_module_name      stretch_body.stretch_gripper  
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.stretch_gripper.device_params       RE2V0_stretch_gripper         
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.wrist_yaw.py_class_name             WristYaw                      
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.wrist_yaw.py_module_name            stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.tool_stretch_gripper.devices.wrist_yaw.device_params             RE2V0_wrist_yaw               
+stretch_body.robot_params.nominal_params                               param.tool_none.device_info                                            EndOfArm chain with just Yaw joint for standard RE2
+stretch_body.robot_params.nominal_params                               param.tool_none.use_group_sync_read                                    1                             
+stretch_body.robot_params.nominal_params                               param.tool_none.retry_on_comm_failure                                  1                             
+stretch_body.robot_params.nominal_params                               param.tool_none.baud                                                   115200                        
+stretch_body.robot_params.nominal_params                               param.tool_none.dxl_latency_timer                                      64                            
+stretch_body.robot_params.nominal_params                               param.tool_none.py_class_name                                          ToolNone                      
+stretch_body.robot_params.nominal_params                               param.tool_none.py_module_name                                         stretch_body.end_of_arm_tools 
+stretch_body.robot_params.nominal_params                               param.tool_none.stow.wrist_yaw                                         3.4                           
+stretch_body.robot_params.nominal_params                               param.tool_none.devices.wrist_yaw.py_class_name                        WristYaw                      
+stretch_body.robot_params.nominal_params                               param.tool_none.devices.wrist_yaw.py_module_name                       stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.tool_none.devices.wrist_yaw.device_params                        RE2V0_wrist_yaw               
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.py_class_name                             EOA_Wrist_DW3_Tool_NIL        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.py_module_name                            stretch_body.end_of_arm_tools 
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.use_group_sync_read                       1                             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.retry_on_comm_failure                     1                             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.baud                                      115200                        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.dxl_latency_timer                         64                            
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.wrist                                     eoaw_dw3                      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.tool                                      eoat_nil                      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.stow.arm                                  0.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.stow.lift                                 0.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.stow.wrist_pitch                          -0.62                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.stow.wrist_roll                           0.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.stow.wrist_yaw                            3.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.k_brake_distance.wrist_pitch 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.k_brake_distance.wrist_yaw 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.k_brake_distance.wrist_roll 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.link_pts link_wrist_pitch              
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.detect_as pts                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.link_pts link_wrist_yaw_bottom         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.detect_as pts                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.collision_mgmt.joints.lift                [{'motion_dir': 'neg', 'collision_pair': 'link_wrist_pitch_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_wrist_yaw_bottom_TO_base_link'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_pitch.py_class_name         WristPitch                    
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_pitch.py_module_name        stretch_body.wrist_pitch      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_pitch.device_params         SE3_wrist_pitch_DW3           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_roll.py_class_name          WristRoll                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_roll.py_module_name         stretch_body.wrist_roll       
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_roll.device_params          SE3_wrist_roll_DW3            
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_yaw.py_class_name           WristYaw                      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_yaw.py_module_name          stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_nil.devices.wrist_yaw.device_params           SE3_wrist_yaw_DW3             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.py_class_name                             EOA_Wrist_DW3_Tool_SG3        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.py_module_name                            stretch_body.end_of_arm_tools 
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.use_group_sync_read                       1                             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.retry_on_comm_failure                     1                             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.baud                                      115200                        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.dxl_latency_timer                         64                            
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.arm                                  0.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.lift                                 0.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.wrist_pitch                          -0.62                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.wrist_roll                           0.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.wrist_yaw                            3.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.stow.stretch_gripper                      0.0                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.k_brake_distance.wrist_pitch 0.5                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.k_brake_distance.wrist_yaw 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.k_brake_distance.wrist_roll 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.k_brake_distance.stretch_gripper 0.25                          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_lift.link_pts link_gripper_fingertip_left   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_lift.link_cube link_lift                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_lift.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_lift.cube_scale 1.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_lift.link_pts link_gripper_fingertip_right  
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_lift.link_cube link_lift                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_lift.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_lift.cube_scale 1.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_arm_l1.link_pts link_gripper_fingertip_left   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_arm_l1.link_cube link_arm_l1                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_arm_l1.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_link_arm_l1.cube_scale 1.6                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_arm_l1.link_pts link_gripper_fingertip_right  
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_arm_l1.link_cube link_arm_l1                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_arm_l1.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_link_arm_l1.cube_scale 1.6                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_base_link.link_pts link_gripper_s3_body          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.link_pts link_wrist_pitch              
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_pitch_TO_base_link.cube_scale 1.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.link_pts link_wrist_yaw_bottom         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_wrist_yaw_bottom_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_base_link.link_pts link_gripper_finger_left      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_base_link.link_pts link_gripper_finger_right     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_base_link.link_pts link_gripper_fingertip_left   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_left_TO_base_link.cube_scale 1.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_base_link.link_pts link_gripper_fingertip_right  
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_fingertip_right_TO_base_link.cube_scale 1.3                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l0.link_pts link_gripper_s3_body          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l0.link_cube link_arm_l0                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l0.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l0.cube_scale 1.2                           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l1.link_pts link_gripper_s3_body          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l1.link_cube link_arm_l1                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_arm_l1.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_head_tilt.link_cube link_head_tilt                
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_head_tilt.link_pts link_gripper_s3_body          
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_s3_body_TO_link_head_tilt.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_head_tilt.link_cube link_head_tilt                
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_head_tilt.link_pts link_gripper_finger_left      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_head_tilt.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_head_tilt.link_cube link_head_tilt                
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_head_tilt.link_pts link_gripper_finger_right     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_head_tilt.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_link_arm_l0.link_pts link_gripper_finger_right     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_link_arm_l0.link_cube link_arm_l0                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_link_arm_l0.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_arm_l1.link_pts link_gripper_finger_left      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_arm_l1.link_cube link_arm_l1                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_left_TO_link_arm_l1.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_arm_l1.link_pts link_gripper_finger_right     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_arm_l1.link_cube link_arm_l1                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_gripper_finger_right_TO_link_arm_l1.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_arm_l0_TO_base_link.link_pts link_arm_l0                   
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_arm_l0_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.collision_pairs.link_arm_l0_TO_base_link.detect_as edges                         
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.joints.arm                 [{'motion_dir': 'neg', 'collision_pair': 'link_gripper_fingertip_right_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_wrist_pitch_TO_base_link'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.joints.lift                [{'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_wrist_pitch_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_wrist_yaw_bottom_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_left_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_fingertip_left_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_fingertip_right_TO_base_link'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_right_TO_link_head_tilt'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.joints.wrist_pitch         [{'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_left_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_fingertip_left_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_fingertip_right_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_link_head_tilt'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_left_TO_link_head_tilt'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l0'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l1'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_right_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_fingertip_left_TO_link_lift'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_fingertip_right_TO_link_lift'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.joints.wrist_roll          [{'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l1'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l0'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l0'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.collision_mgmt.joints.wrist_yaw           [{'motion_dir': 'pos', 'collision_pair': 'link_gripper_fingertip_left_TO_link_lift'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_base_link'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_base_link'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_link_arm_l1'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_base_link'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_right_TO_link_head_tilt'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_s3_body_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_link_head_tilt'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_link_head_tilt'}, {'motion_dir': 'pos', 'collision_pair': 'link_gripper_finger_left_TO_link_arm_l1'}, {'motion_dir': 'neg', 'collision_pair': 'link_gripper_finger_right_TO_link_arm_l1'}]
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_pitch.py_class_name         WristPitch                    
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_pitch.py_module_name        stretch_body.wrist_pitch      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_pitch.device_params         SE3_wrist_pitch_DW3           
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_roll.py_class_name          WristRoll                     
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_roll.py_module_name         stretch_body.wrist_roll       
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_roll.device_params          SE3_wrist_roll_DW3            
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_yaw.py_class_name           WristYaw                      
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_yaw.py_module_name          stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.wrist_yaw.device_params           SE3_wrist_yaw_DW3             
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.stretch_gripper.py_class_name     StretchGripper3               
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.stretch_gripper.py_module_name    stretch_body.stretch_gripper  
+stretch_body.robot_params.nominal_params                               param.eoa_wrist_dw3_tool_sg3.devices.stretch_gripper.device_params     SE3_stretch_gripper_SG3       
+stretch_body.robot_params.nominal_params                               param.arm.usb_name                                                     /dev/hello-motor-arm          
+stretch_body.robot_params.nominal_params                               param.arm.use_vel_traj                                                 1                             
+stretch_body.robot_params.nominal_params                               param.arm.force_N_per_A                                                55.9                          
+stretch_body.robot_params.nominal_params                               param.arm.chain_pitch                                                  0.0167                        
+stretch_body.robot_params.nominal_params                               param.arm.chain_sprocket_teeth                                         10                            
+stretch_body.robot_params.nominal_params                               param.arm.gr_spur                                                      3.875                         
+stretch_body.robot_params.nominal_params                               param.arm.i_feedforward                                                0                             
+stretch_body.robot_params.nominal_params                               param.arm.calibration_range_bounds                                     [0.514, 0.525]                
+stretch_body.robot_params.nominal_params                               param.arm.contact_models.effort_pct.contact_thresh_calibration_margin  10.0                          
+stretch_body.robot_params.nominal_params                               param.arm.contact_models.effort_pct.contact_thresh_max                 [-90.0, 90.0]                 
+stretch_configuration_params.yaml                                      param.arm.contact_models.effort_pct.contact_thresh_default             [-55.0, 55.0]                 
+stretch_configuration_params.yaml                                      param.arm.contact_models.effort_pct.contact_thresh_homing              [-55.0, 55.0]                 
+stretch_body.robot_params.nominal_params                               param.arm.motion.default.accel_m                                       0.14                          
+stretch_body.robot_params.nominal_params                               param.arm.motion.default.vel_m                                         0.14                          
+stretch_body.robot_params.nominal_params                               param.arm.motion.fast.accel_m                                          0.3                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.fast.vel_m                                            0.3                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.max.accel_m                                           0.4                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.max.vel_m                                             0.4                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.slow.accel_m                                          0.05                          
+stretch_body.robot_params.nominal_params                               param.arm.motion.slow.vel_m                                            0.05                          
+stretch_body.robot_params.nominal_params                               param.arm.motion.trajectory_max.vel_m                                  0.4                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.trajectory_max.accel_m                                0.4                           
+stretch_body.robot_params.nominal_params                               param.arm.motion.vel_brakezone_factor                                  0.03                          
+stretch_body.robot_params.nominal_params                               param.arm.set_safe_velocity                                            1                             
+stretch_configuration_params.yaml                                      param.arm.range_m                                                      [0.0, 0.52]                   
+stretch_body.robot_params.nominal_params                               param.base.usb_name_left_wheel                                         /dev/hello-motor-left-wheel   
+stretch_body.robot_params.nominal_params                               param.base.usb_name_right_wheel                                        /dev/hello-motor-right-wheel  
+stretch_body.robot_params.nominal_params                               param.base.use_vel_traj                                                1                             
+stretch_body.robot_params.nominal_params                               param.base.force_N_per_A                                               21.18                         
+stretch_body.robot_params.nominal_params                               param.base.gr                                                          3.8                           
+stretch_body.robot_params.nominal_params                               param.base.motion.default.accel_m                                      0.12                          
+stretch_body.robot_params.nominal_params                               param.base.motion.default.vel_m                                        0.12                          
+stretch_body.robot_params.nominal_params                               param.base.motion.fast.accel_m                                         0.25                          
+stretch_body.robot_params.nominal_params                               param.base.motion.fast.vel_m                                           0.25                          
+stretch_body.robot_params.nominal_params                               param.base.motion.max.accel_m                                          0.3                           
+stretch_body.robot_params.nominal_params                               param.base.motion.max.vel_m                                            0.3                           
+stretch_body.robot_params.nominal_params                               param.base.motion.slow.accel_m                                         0.06                          
+stretch_body.robot_params.nominal_params                               param.base.motion.slow.vel_m                                           0.04                          
+stretch_body.robot_params.nominal_params                               param.base.motion.trajectory_max.vel_r                                 50.0                          
+stretch_body.robot_params.nominal_params                               param.base.motion.trajectory_max.accel_r                               30.0                          
+stretch_body.robot_params.nominal_params                               param.base.contact_models.effort_pct.contact_thresh_translate_default  60.0                          
+stretch_body.robot_params.nominal_params                               param.base.contact_models.effort_pct.contact_thresh_rotate_default     60.0                          
+stretch_body.robot_params.nominal_params                               param.base.contact_models.effort_pct.contact_thresh_translate_max      100.0                         
+stretch_body.robot_params.nominal_params                               param.base.contact_models.effort_pct.contact_thresh_rotate_max         100.0                         
+stretch_body.robot_params.nominal_params                               param.base.sentry_max_velocity.limit_accel_m                           0.15                          
+stretch_body.robot_params.nominal_params                               param.base.sentry_max_velocity.limit_vel_m                             0.1                           
+stretch_body.robot_params.nominal_params                               param.base.sentry_max_velocity.max_arm_extension_m                     0.03                          
+stretch_body.robot_params.nominal_params                               param.base.sentry_max_velocity.max_lift_height_m                       0.3                           
+stretch_body.robot_params.nominal_params                               param.base.sentry_max_velocity.min_wrist_yaw_rad                       2.54                          
+stretch_body.robot_params.nominal_params                               param.base.wheel_diameter_m                                            0.1016                        
+stretch_configuration_params.yaml                                      param.base.wheel_separation_m                                          0.3153                        
+stretch_body.robot_params.nominal_params                               param.dxl_comm_errors.warn_every_s                                     1.0                           
+stretch_body.robot_params.nominal_params                               param.dxl_comm_errors.warn_above_rate                                  0.1                           
+stretch_body.robot_params.nominal_params                               param.dxl_comm_errors.verbose                                          0                             
+stretch_body.robot_params.nominal_params                               param.end_of_arm.usb_name                                              /dev/hello-dynamixel-wrist    
+stretch_body.robot_params.nominal_params                               param.end_of_arm.devices.wrist_yaw.py_class_name                       WristYaw                      
+stretch_body.robot_params.nominal_params                               param.end_of_arm.devices.wrist_yaw.py_module_name                      stretch_body.wrist_yaw        
+stretch_body.robot_params.nominal_params                               param.end_of_arm.use_group_sync_read                                   1                             
+stretch_body.robot_params.nominal_params                               param.end_of_arm.retry_on_comm_failure                                 1                             
+stretch_body.robot_params.nominal_params                               param.end_of_arm.baud                                                  115200                        
+stretch_body.robot_params.nominal_params                               param.end_of_arm.dxl_latency_timer                                     64                            
+stretch_body.robot_params.nominal_params                               param.head.usb_name                                                    /dev/hello-dynamixel-head     
+stretch_body.robot_params.nominal_params                               param.head.use_group_sync_read                                         1                             
+stretch_body.robot_params.nominal_params                               param.head.retry_on_comm_failure                                       1                             
+stretch_body.robot_params.nominal_params                               param.head.dxl_latency_timer                                           64                            
+stretch_body.robot_params.nominal_params                               param.head.baud                                                        115200                        
+stretch_body.robot_params.nominal_params                               param.head_pan.flip_encoder_polarity                                   1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.gr                                                      1.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.id                                                      11                            
+stretch_body.robot_params.nominal_params                               param.head_pan.max_voltage_limit                                       15                            
+stretch_body.robot_params.nominal_params                               param.head_pan.min_voltage_limit                                       11                            
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.trajectory_vel_ctrl                              1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.trajectory_vel_ctrl_kP                           1.5                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.default.accel                                    8.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.default.vel                                      3.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.fast.accel                                       10.0                          
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.fast.vel                                         5.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.max.accel                                        14.0                          
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.max.vel                                          7.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.slow.accel                                       4.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.slow.vel                                         1.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.trajectory_max.vel_r                             8.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.trajectory_max.accel_r                           16.0                          
+stretch_body.robot_params.nominal_params                               param.head_pan.motion.vel_brakezone_factor                             0.5                           
+stretch_body.robot_params.nominal_params                               param.head_pan.set_safe_velocity                                       1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.pid                                                     [800, 200, 200]               
+stretch_body.robot_params.nominal_params                               param.head_pan.pwm_homing                                              [-300, 300]                   
+stretch_body.robot_params.nominal_params                               param.head_pan.pwm_limit                                               885                           
+stretch_body.robot_params.nominal_params                               param.head_pan.req_calibration                                         0                             
+stretch_body.robot_params.nominal_params                               param.head_pan.return_delay_time                                       0                             
+stretch_body.robot_params.nominal_params                               param.head_pan.temperature_limit                                       72                            
+stretch_body.robot_params.nominal_params                               param.head_pan.usb_name                                                /dev/hello-dynamixel-head     
+stretch_body.robot_params.nominal_params                               param.head_pan.use_multiturn                                           0                             
+stretch_body.robot_params.nominal_params                               param.head_pan.use_pos_current_ctrl                                    0                             
+stretch_body.robot_params.nominal_params                               param.head_pan.retry_on_comm_failure                                   1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.baud                                                    115200                        
+stretch_body.robot_params.nominal_params                               param.head_pan.enable_runstop                                          1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.disable_torque_on_stop                                  1                             
+stretch_body.robot_params.nominal_params                               param.head_pan.stall_max_effort                                        20.0                          
+stretch_body.robot_params.nominal_params                               param.head_pan.stall_backoff                                           0.017                         
+stretch_body.robot_params.nominal_params                               param.head_pan.stall_max_time                                          1.0                           
+stretch_body.robot_params.nominal_params                               param.head_pan.stall_min_vel                                           0.1                           
+stretch_body.robot_params.nominal_params                               param.head_pan.range_pad_t                                             [50.0, -50.0]                 
+stretch_configuration_params.yaml                                      param.head_pan.range_t                                                 [0, 3827]                     
+stretch_configuration_params.yaml                                      param.head_pan.zero_t                                                  1250                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.flip_encoder_polarity                                  1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.gr                                                     1.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.id                                                     12                            
+stretch_body.robot_params.nominal_params                               param.head_tilt.max_voltage_limit                                      15                            
+stretch_body.robot_params.nominal_params                               param.head_tilt.min_voltage_limit                                      11                            
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.trajectory_vel_ctrl                             1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.trajectory_vel_ctrl_kP                          1.5                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.default.accel                                   8.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.default.vel                                     3.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.fast.accel                                      10.0                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.fast.vel                                        5.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.max.accel                                       14.0                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.max.vel                                         6.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.slow.accel                                      4.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.slow.vel                                        1.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.trajectory_max.vel_r                            8.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.trajectory_max.accel_r                          16.0                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.motion.vel_brakezone_factor                            1.2                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.set_safe_velocity                                      1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.pid                                                    [800, 200, 200]               
+stretch_body.robot_params.nominal_params                               param.head_tilt.pwm_homing                                             [-300, 300]                   
+stretch_body.robot_params.nominal_params                               param.head_tilt.pwm_limit                                              885                           
+stretch_configuration_params.yaml                                      param.head_tilt.range_t                                                [1775, 3150]                  
+stretch_body.robot_params.nominal_params                               param.head_tilt.req_calibration                                        0                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.return_delay_time                                      0                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.temperature_limit                                      72                            
+stretch_body.robot_params.nominal_params                               param.head_tilt.usb_name                                               /dev/hello-dynamixel-head     
+stretch_body.robot_params.nominal_params                               param.head_tilt.use_multiturn                                          0                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.use_pos_current_ctrl                                   0                             
+stretch_configuration_params.yaml                                      param.head_tilt.zero_t                                                 2048                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.retry_on_comm_failure                                  1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.baud                                                   115200                        
+stretch_body.robot_params.nominal_params                               param.head_tilt.enable_runstop                                         1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.disable_torque_on_stop                                 1                             
+stretch_body.robot_params.nominal_params                               param.head_tilt.stall_backoff                                          0.017                         
+stretch_body.robot_params.nominal_params                               param.head_tilt.stall_max_effort                                       20.0                          
+stretch_body.robot_params.nominal_params                               param.head_tilt.stall_max_time                                         1.0                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.stall_min_vel                                          0.1                           
+stretch_body.robot_params.nominal_params                               param.head_tilt.range_pad_t                                            [50.0, -50.0]                 
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.effort_LPF                                 10.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.enable_guarded_mode                        1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.enable_runstop                             1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.enable_sync_mode                           1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.enable_vel_watchdog                        0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.flip_effort_polarity                       0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.flip_encoder_polarity                      0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.iMax_neg                                   -4.35                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.iMax_pos                                   4.35                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.i_contact_neg                              -2.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.i_contact_pos                              2.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.i_safety_feedforward                       0.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pKd_d                                      60.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pKi_d                                      0.1                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pKi_limit                                  150                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pKp_d                                      8.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pLPF                                       60                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.voltage_LPF                                1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.phase_advance_d                            1.8                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.pos_near_setpoint_d                        2.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.safety_hold                                0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.safety_stiffness                           1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vKd_d                                      0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vKi_d                                      0.005                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vKi_limit                                  200                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vKp_d                                      0.2                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vLPF                                       30                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vTe_d                                      50                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vel_near_setpoint_d                        3.5                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.gains.vel_status_LPF                             10.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.holding_torque                                   1.26                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.motion.accel                                     15                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.motion.vel                                       25                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-arm.rated_current                                    2.8                           
+stretch_configuration_params.yaml                                      param.hello-motor-arm.serial_no                                        C83B904C50555733352E3120FF0F1408
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.effort_LPF                          2.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.enable_guarded_mode                 0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.enable_runstop                      1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.enable_sync_mode                    1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.enable_vel_watchdog                 1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.flip_effort_polarity                1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.flip_encoder_polarity               1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.iMax_neg                            -4.35                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.iMax_pos                            4.35                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.i_contact_neg                       -3.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.i_contact_pos                       3.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.i_safety_feedforward                0.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pKd_d                               65.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pKi_d                               0.01                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pKi_limit                           50.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pKp_d                               12.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pLPF                                80.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.voltage_LPF                         1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.phase_advance_d                     1.8                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.pos_near_setpoint_d                 1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.safety_hold                         0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.safety_stiffness                    1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vKd_d                               0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vKi_d                               0.005                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vKi_limit                           200                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vKp_d                               0.17                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vLPF                                30                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vTe_d                               50                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vel_near_setpoint_d                 3.5                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.gains.vel_status_LPF                      10.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.holding_torque                            1.26                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.motion.accel                              15                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.motion.vel                                25                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-left-wheel.rated_current                             2.8                           
+stretch_configuration_params.yaml                                      param.hello-motor-left-wheel.serial_no                                 1F21D78650555733352E3120FF0C1037
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.effort_LPF                                2.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.enable_guarded_mode                       1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.enable_runstop                            1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.enable_sync_mode                          1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.enable_vel_watchdog                       0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.flip_effort_polarity                      1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.flip_encoder_polarity                     1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.iMax_neg                                  -4.35                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.iMax_pos                                  4.35                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.i_contact_neg                             -3.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.i_contact_pos                             3.0                           
+stretch_configuration_params.yaml                                      param.hello-motor-lift.gains.i_safety_feedforward                      1.8                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pKd_d                                     25.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pKi_d                                     0.05                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pKi_limit                                 100.0                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pKp_d                                     6.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pLPF                                      100                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.voltage_LPF                               1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.phase_advance_d                           1.8                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.pos_near_setpoint_d                       6.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.safety_hold                               1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.safety_stiffness                          0.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vKd_d                                     0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vKi_d                                     0.005                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vKi_limit                                 200                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vKp_d                                     0.2                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vLPF                                      30                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vTe_d                                     50                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vel_near_setpoint_d                       3.5                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.gains.vel_status_LPF                            10.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.holding_torque                                  1.9                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.motion.accel                                    15                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.motion.vel                                      12                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-lift.rated_current                                   2.8                           
+stretch_configuration_params.yaml                                      param.hello-motor-lift.serial_no                                       461074E650555733352E3120FF0F1208
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.effort_LPF                         2.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.enable_guarded_mode                0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.enable_runstop                     1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.enable_sync_mode                   1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.enable_vel_watchdog                1                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.flip_effort_polarity               0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.flip_encoder_polarity              0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.iMax_neg                           -4.35                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.iMax_pos                           4.35                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.i_contact_neg                      -3.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.i_contact_pos                      3.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.i_safety_feedforward               0.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pKd_d                              65.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pKi_d                              0.01                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pKi_limit                          50.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pKp_d                              12.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pLPF                               80.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.voltage_LPF                        1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.phase_advance_d                    1.8                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.pos_near_setpoint_d                1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.safety_hold                        0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.safety_stiffness                   1.0                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vKd_d                              0                             
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vKi_d                              0.005                         
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vKi_limit                          200                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vKp_d                              0.17                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vLPF                               30                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vTe_d                              50                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vel_near_setpoint_d                3.5                           
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.gains.vel_status_LPF                     10.0                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.holding_torque                           1.26                          
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.motion.accel                             15                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.motion.vel                               25                            
+stretch_body.robot_params.nominal_params                               param.hello-motor-right-wheel.rated_current                            2.8                           
+stretch_configuration_params.yaml                                      param.hello-motor-right-wheel.serial_no                                E9155A7350555733352E3120FF0F0D07
+stretch_body.robot_params.nominal_params                               param.lift.usb_name                                                    /dev/hello-motor-lift         
+stretch_body.robot_params.nominal_params                               param.lift.use_vel_traj                                                1                             
+stretch_body.robot_params.nominal_params                               param.lift.force_N_per_A                                               75.0                          
+stretch_body.robot_params.nominal_params                               param.lift.calibration_range_bounds                                    [1.094, 1.106]                
+stretch_body.robot_params.nominal_params                               param.lift.contact_models.effort_pct.contact_thresh_calibration_margin 10.0                          
+stretch_body.robot_params.nominal_params                               param.lift.contact_models.effort_pct.contact_thresh_max                [-100, 100]                   
+stretch_configuration_params.yaml                                      param.lift.contact_models.effort_pct.contact_thresh_default            [-25.63551023464792, 74.461749981512]
+stretch_configuration_params.yaml                                      param.lift.contact_models.effort_pct.contact_thresh_homing             [-25.63551023464792, 74.461749981512]
+stretch_body.robot_params.nominal_params                               param.lift.belt_pitch_m                                                0.005                         
+stretch_body.robot_params.nominal_params                               param.lift.motion.default.accel_m                                      0.2                           
+stretch_body.robot_params.nominal_params                               param.lift.motion.default.vel_m                                        0.11                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.fast.accel_m                                         0.25                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.fast.vel_m                                           0.13                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.max.accel_m                                          0.3                           
+stretch_body.robot_params.nominal_params                               param.lift.motion.max.vel_m                                            0.15                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.slow.accel_m                                         0.05                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.slow.vel_m                                           0.05                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.trajectory_max.accel_m                               0.3                           
+stretch_body.robot_params.nominal_params                               param.lift.motion.trajectory_max.vel_m                                 0.15                          
+stretch_body.robot_params.nominal_params                               param.lift.motion.vel_brakezone_factor                                 0.01                          
+stretch_body.robot_params.nominal_params                               param.lift.set_safe_velocity                                           1                             
+stretch_body.robot_params.nominal_params                               param.lift.pinion_t                                                    12                            
+stretch_configuration_params.yaml                                      param.lift.i_feedforward                                               1.8                           
+stretch_configuration_params.yaml                                      param.lift.range_m                                                     [0.0, 1.1]                    
+stretch_body.robot_params.nominal_params                               param.pimu.usb_name                                                    /dev/hello-pimu               
+stretch_body.robot_params.nominal_params                               param.pimu.base_fan_off                                                70                            
+stretch_body.robot_params.nominal_params                               param.pimu.base_fan_on                                                 82                            
+stretch_body.robot_params.nominal_params                               param.pimu.max_sync_rate_hz                                            80.0                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.accel_LPF                                            20.0                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.bump_thresh                                          20.0                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.cliff_LPF                                            10.0                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.cliff_thresh                                         -50                           
+stretch_body.robot_params.nominal_params                               param.pimu.config.current_LPF                                          10.0                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.high_current_alert                                   7.0                           
+stretch_body.robot_params.nominal_params                               param.pimu.config.low_voltage_alert                                    10.5                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.over_tilt_alert                                      0.17                          
+stretch_body.robot_params.nominal_params                               param.pimu.config.stop_at_cliff                                        0                             
+stretch_body.robot_params.nominal_params                               param.pimu.config.stop_at_high_current                                 0                             
+stretch_body.robot_params.nominal_params                               param.pimu.config.stop_at_low_voltage                                  1                             
+stretch_body.robot_params.nominal_params                               param.pimu.config.stop_at_runstop                                      1                             
+stretch_body.robot_params.nominal_params                               param.pimu.config.stop_at_tilt                                         0                             
+stretch_body.robot_params.nominal_params                               param.pimu.config.temp_LPF                                             1.0                           
+stretch_body.robot_params.nominal_params                               param.pimu.config.voltage_LPF                                          1.0                           
+stretch_configuration_params.yaml                                      param.pimu.config.cliff_zero                                           [0.0, 0.0, 0.0, 0.0]          
+stretch_configuration_params.yaml                                      param.pimu.config.gravity_vector_scale                                 1.0                           
+stretch_configuration_params.yaml                                      param.pimu.config.gyro_zero_offsets                                    [0.0, 0.0, 0.0]               
+stretch_configuration_params.yaml                                      param.pimu.config.mag_offsets                                          [0.0, 0.0, 0.0]               
+stretch_configuration_params.yaml                                      param.pimu.config.mag_softiron_matrix                                  [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+stretch_configuration_params.yaml                                      param.pimu.config.rate_gyro_vector_scale                               1.0                           
+stretch_body.robot_params.nominal_params                               param.robot.rates.DXLStatusThread_Hz                                   15.0                          
+stretch_body.robot_params.nominal_params                               param.robot.rates.NonDXLStatusThread_Hz                                25.0                          
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_Hz                               15.0                          
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_monitor_downrate_int             2                             
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_trace_downrate_int               1                             
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_collision_downrate_int           1                             
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_sentry_downrate_int              1                             
+stretch_body.robot_params.nominal_params                               param.robot.rates.SystemMonitorThread_nondxl_trajectory_downrate_int   2                             
+stretch_configuration_params.yaml                                      param.robot.tool                                                       tool_stretch_dex_wrist        
+stretch_user_params.yaml                                               param.robot.use_collision_manager                                      0                             
+stretch_body.robot_params.nominal_params                               param.robot.stow.arm                                                   0.0                           
+stretch_body.robot_params.nominal_params                               param.robot.stow.head_pan                                              0.0                           
+stretch_body.robot_params.nominal_params                               param.robot.stow.head_tilt                                             0.0                           
+stretch_body.robot_params.nominal_params                               param.robot.stow.lift                                                  0.23                          
+stretch_body.robot_params.nominal_params                               param.robot.use_monitor                                                1                             
+stretch_body.robot_params.nominal_params                               param.robot.use_trace                                                  0                             
+stretch_body.robot_params.nominal_params                               param.robot.use_sentry                                                 1                             
+stretch_body.robot_params.nominal_params                               param.robot.use_asyncio                                                1                             
+stretch_configuration_params.yaml                                      param.robot.batch_name                                                 otis                          
+stretch_configuration_params.yaml                                      param.robot.d435i.serial_no                                            NA                            
+stretch_configuration_params.yaml                                      param.robot.model_name                                                 RE2V0                         
+stretch_configuration_params.yaml                                      param.robot.serial_no                                                  stretch-re2-2068              
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.max_mesh_points                             48                            
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.k_brake_distance.lift                 0.75                          
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.k_brake_distance.arm                  0.125                         
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.k_brake_distance.wrist_yaw            0.125                         
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.k_brake_distance.head_pan             0.125                         
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.k_brake_distance.head_tilt            0.125                         
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_head_tilt_TO_link_arm_l4.link_pts link_head_tilt                
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_head_tilt_TO_link_arm_l4.link_cube link_arm_l4                   
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_head_tilt_TO_link_arm_l4.detect_as pts                           
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_arm_l0_TO_base_link.link_pts link_arm_l0                   
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_arm_l0_TO_base_link.link_cube base_link                     
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.collision_pairs.link_arm_l0_TO_base_link.detect_as pts                           
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.joints.lift                           [{'motion_dir': 'pos', 'collision_pair': 'link_head_tilt_TO_link_arm_l4'}, {'motion_dir': 'neg', 'collision_pair': 'link_arm_l0_TO_base_link'}]
+stretch_body.robot_params.nominal_params                               param.robot_collision_mgmt.RE2V0.joints.arm                            [{'motion_dir': 'neg', 'collision_pair': 'link_arm_l0_TO_base_link'}]
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_base_bump_event                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_base_cliff_event                           1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_current                                    1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_dynamixel_flags                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_guarded_contact                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_over_tilt_alert                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_runstop                                    1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_voltage                                    1                             
+stretch_body.robot_params.nominal_params                               param.robot_monitor.monitor_wrist_single_tap                           1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.base_fan_control                                    1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.base_max_velocity                                   1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.dynamixel_stop_on_runstop                           1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.stretch_gripper_overload                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.wrist_yaw_overload                                  1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.wrist_pitch_overload                                1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.wrist_roll_overload                                 1                             
+stretch_body.robot_params.nominal_params                               param.robot_sentry.stepper_is_moving_filter                            1                             
+stretch_body.robot_params.nominal_params                               param.robot_trace.n_samples_per_file                                   100                           
+stretch_body.robot_params.nominal_params                               param.robot_trace.duration_limit_minutes                               10.0                          
+stretch_body.robot_params.nominal_params                               param.wacc.usb_name                                                    /dev/hello-wacc               
+stretch_body.robot_params.nominal_params                               param.wacc.config.accel_LPF                                            10.0                          
+stretch_body.robot_params.nominal_params                               param.wacc.config.accel_range_g                                        4                             
+stretch_body.robot_params.nominal_params                               param.wacc.config.accel_single_tap_dur                                 70                            
+stretch_body.robot_params.nominal_params                               param.wacc.config.accel_single_tap_thresh                              50                            
+stretch_body.robot_params.nominal_params                               param.wacc.config.ana_LPF                                              10.0                          
+stretch_configuration_params.yaml                                      param.wacc.config.accel_gravity_scale                                  1.0                           
+stretch_body.robot_params.nominal_params                               param.wacc.accel_gravity_scale                                         1.0                           
+stretch_body.robot_params.nominal_params                               param.respeaker.usb_name                                               /dev/hello-respeaker          
+stretch_body.robot_params.nominal_params                               param.lidar.usb_name                                                   /dev/hello-lrf                
+stretch_body.robot_params.nominal_params                               param.lidar.baud                                                       115200                        
+stretch_body.robot_params.nominal_params                               param.stretch_gamepad.enable_fn_button                                 0                             
+stretch_body.robot_params.nominal_params                               param.stretch_gamepad.function_cmd                                                                   
+stretch_body.robot_params.nominal_params                               param.stretch_gamepad.press_time_span                                  5                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.device_info                                      Standard angled or DexWrist straight gripper compatible RE2
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.range_pad_t                                      [100.0, -100.0]               
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.flip_encoder_polarity                            0                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gr                                               1.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.id                                               14                            
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.max_voltage_limit                                15                            
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.min_grip_strength                                -125                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.min_voltage_limit                                11                            
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gripper_conversion.finger_length_m               0.171                         
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gripper_conversion.open_aperture_m               0.09                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gripper_conversion.closed_aperture_m             0.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gripper_conversion.open_robotis                  70.0                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.gripper_conversion.closed_robotis                0.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.trajectory_vel_ctrl                       1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.trajectory_vel_ctrl_kP                    1.5                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.default.accel                             10.0                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.default.vel                               4.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.fast.accel                                10.0                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.fast.vel                                  6.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.max.accel                                 12                            
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.max.vel                                   8                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.slow.accel                                4.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.slow.vel                                  2.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.trajectory_max.vel_r                      50.0                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.trajectory_max.accel_r                    100.0                         
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.motion.vel_brakezone_factor                      1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.set_safe_velocity                                1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.pid                                              [640.0, 0, 0]                 
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.pwm_homing                                       [-400, 0]                     
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.pwm_limit                                        885                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.req_calibration                                  1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.return_delay_time                                0                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.stall_backoff                                    2.0                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.stall_max_effort                                 20.0                          
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.stall_max_time                                   0.5                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.stall_min_vel                                    0.1                           
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.temperature_limit                                72                            
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.usb_name                                         /dev/hello-dynamixel-wrist    
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.use_multiturn                                    1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.use_pos_current_ctrl                             0                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.retry_on_comm_failure                            1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.baud                                             115200                        
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.enable_runstop                                   1                             
+stretch_body.robot_params.nominal_params                               param.stretch_gripper.disable_torque_on_stop                           1                             
+stretch_configuration_params.yaml                                      param.stretch_gripper.range_t                                          [0, 8563]                     
+stretch_configuration_params.yaml                                      param.stretch_gripper.zero_t                                           5219                          
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.device_info                                          Wrist pitch shipped with original DexWrist for RE2s. Imported from tool_share.
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.flip_encoder_polarity                                1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.enable_runstop                                       1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.gr                                                   1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.id                                                   15                            
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.max_voltage_limit                                    15                            
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.min_voltage_limit                                    11                            
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.trajectory_vel_ctrl                           1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.trajectory_vel_ctrl_kP                        1.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.default.accel                                 6.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.default.vel                                   2.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.fast.accel                                    8.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.fast.vel                                      2.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.max.accel                                     10.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.max.vel                                       3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.slow.accel                                    4.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.slow.vel                                      1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.trajectory_max.accel_r                        16.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.trajectory_max.vel_r                          8.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.motion.vel_brakezone_factor                          1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.set_safe_velocity                                    1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.pid                                                  [400, 0, 200]                 
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.pwm_homing                                           [0, 0]                        
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.pwm_limit                                            885                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.range_t                                              [730, 2048]                   
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.req_calibration                                      0                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.return_delay_time                                    0                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.stall_backoff                                        0.017                         
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.stall_max_effort                                     25.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.stall_max_time                                       5.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.stall_min_vel                                        0.1                           
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.temperature_limit                                    72                            
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.usb_name                                             /dev/hello-dynamixel-wrist    
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.use_multiturn                                        0                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.use_pos_current_ctrl                                 1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.zero_t                                               1024                          
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.baud                                                 115200                        
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.retry_on_comm_failure                                1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.disable_torque_on_stop                               0                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.float_on_stop                                        1                             
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.current_float_A                                      -0.13                         
+stretch_body.robot_params.nominal_params                               param.wrist_pitch.current_limit_A                                      2.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.device_info                                           Wrist roll shipped with original DexWrist for RE2s. Imported from tool_share.
+stretch_body.robot_params.nominal_params                               param.wrist_roll.flip_encoder_polarity                                 0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.enable_runstop                                        1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.gr                                                    1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.id                                                    16                            
+stretch_body.robot_params.nominal_params                               param.wrist_roll.max_voltage_limit                                     16                            
+stretch_body.robot_params.nominal_params                               param.wrist_roll.min_voltage_limit                                     9                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.trajectory_vel_ctrl                            1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.trajectory_vel_ctrl_kP                         1.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.default.accel                                  8.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.default.vel                                    2.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.fast.accel                                     10.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.fast.vel                                       3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.max.accel                                      12                            
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.max.vel                                        4.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.slow.accel                                     4.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.slow.vel                                       1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.trajectory_max.accel_r                         16.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.trajectory_max.vel_r                           8.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.motion.vel_brakezone_factor                           1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.set_safe_velocity                                     1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.pid                                                   [800, 0, 0]                   
+stretch_body.robot_params.nominal_params                               param.wrist_roll.pwm_homing                                            [0, 0]                        
+stretch_body.robot_params.nominal_params                               param.wrist_roll.pwm_limit                                             885                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.range_t                                               [150, 3950]                   
+stretch_body.robot_params.nominal_params                               param.wrist_roll.req_calibration                                       0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.return_delay_time                                     0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.stall_backoff                                         0.017                         
+stretch_body.robot_params.nominal_params                               param.wrist_roll.stall_max_effort                                      25.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_roll.stall_max_time                                        2.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.stall_min_vel                                         0.1                           
+stretch_body.robot_params.nominal_params                               param.wrist_roll.temperature_limit                                     80                            
+stretch_body.robot_params.nominal_params                               param.wrist_roll.usb_name                                              /dev/hello-dynamixel-wrist    
+stretch_body.robot_params.nominal_params                               param.wrist_roll.use_multiturn                                         0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.use_pos_current_ctrl                                  0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.zero_t                                                2048                          
+stretch_body.robot_params.nominal_params                               param.wrist_roll.baud                                                  115200                        
+stretch_body.robot_params.nominal_params                               param.wrist_roll.retry_on_comm_failure                                 1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.disable_torque_on_stop                                0                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.float_on_stop                                         1                             
+stretch_body.robot_params.nominal_params                               param.wrist_roll.current_float_A                                       0.04                          
+stretch_body.robot_params.nominal_params                               param.wrist_roll.current_limit_A                                       1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.device_info                                            Standard wrist yaw shipped with original RE2
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.flip_encoder_polarity                                  1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.gr                                                     2.4                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.id                                                     13                            
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.max_voltage_limit                                      15                            
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.min_voltage_limit                                      11                            
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.trajectory_vel_ctrl                             1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.trajectory_vel_ctrl_kP                          1.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.default.accel                                   3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.default.vel                                     2.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.fast.accel                                      5.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.fast.vel                                        2.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.max.accel                                       10                            
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.max.vel                                         3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.slow.accel                                      1.5                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.slow.vel                                        0.75                          
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.trajectory_max.vel_r                            3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.trajectory_max.accel_r                          3.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.motion.vel_brakezone_factor                            0.2                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.set_safe_velocity                                      1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.pid                                                    [640, 0, 0]                   
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.pwm_homing                                             [-300, 300]                   
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.pwm_limit                                              885                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.req_calibration                                        1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.return_delay_time                                      0                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.stall_backoff                                          0.017                         
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.stall_max_effort                                       20.0                          
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.stall_max_time                                         1.0                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.stall_min_vel                                          0.1                           
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.temperature_limit                                      72                            
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.usb_name                                               /dev/hello-dynamixel-wrist    
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.use_multiturn                                          1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.use_pos_current_ctrl                                   0                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.retry_on_comm_failure                                  1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.baud                                                   115200                        
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.enable_runstop                                         1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.disable_torque_on_stop                                 1                             
+stretch_body.robot_params.nominal_params                               param.wrist_yaw.range_pad_t                                            [100.0, -100.0]               
+stretch_configuration_params.yaml                                      param.wrist_yaw.range_t                                                [0, 9340]                     
+stretch_configuration_params.yaml                                      param.wrist_yaw.zero_t                                                 7005                          
+stretch_configuration_params.yaml                                      param.params                                                           ['stretch_tool_share.stretch_dex_wrist.params']
+

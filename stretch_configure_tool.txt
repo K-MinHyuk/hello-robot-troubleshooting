@@ -1,0 +1,21 @@
+hello-robot@stretch-re2-2068:~/Downloads$ stretch_configure_tool.py -v
+
+----------- Deprecation Warning -----------
+Your robot params are configured to load DexWrist2 params from Stretch Tool Share
+Support for the DexWrist2 has moved to Stretch Body
+ 1) Open stretch_user_params.yaml and stretch_configuration_params.yaml in
+    the ~/stretch_user/stretch-yyy-xxxx directory.
+ 2) Locate the following text in one of those files and remove it:
+     params: stretch_tool_share.stretch_dex_wrist.params
+     or
+     params:
+      - stretch_tool_share.stretch_dex_wrist.params
+More information can be found at: https://github.com/hello-robot/stretch_body/pull/272
+-------------------------------------------
+
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Loading...
+ERROR: Unable to find wrist hardware. Contact Hello Robot Support.
+

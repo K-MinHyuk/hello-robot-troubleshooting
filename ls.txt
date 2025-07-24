@@ -1,0 +1,6 @@
+hello-robot@stretch-re2-2068:~/Downloads$ ls -l /dev/hello*
+lrwxrwxrwx 1 root root  7  7월 24 16:21 /dev/hello-dynamixel-head -> ttyUSB0
+lrwxrwxrwx 1 root root  7  7월 24 16:21 /dev/hello-lrf -> ttyUSB2
+lrwxrwxrwx 1 root root  7  7월 24 16:23 /dev/hello-pimu -> ttyACM1
+lrwxrwxrwx 1 root root 15  7월 24 16:21 /dev/hello-respeaker -> bus/usb/001/015
+

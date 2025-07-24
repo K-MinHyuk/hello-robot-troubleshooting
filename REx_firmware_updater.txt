@@ -1,0 +1,104 @@
+hello-robot@stretch-re2-2068:~$ REx_firmware_updater.py --install
+
+----------- Deprecation Warning -----------
+Your robot params are configured to load DexWrist2 params from Stretch Tool Share
+Support for the DexWrist2 has moved to Stretch Body
+ 1) Open stretch_user_params.yaml and stretch_configuration_params.yaml in
+    the ~/stretch_user/stretch-yyy-xxxx directory.
+ 2) Locate the following text in one of those files and remove it:
+     params: stretch_tool_share.stretch_dex_wrist.params
+     or
+     params:
+      - stretch_tool_share.stretch_dex_wrist.params
+More information can be found at: https://github.com/hello-robot/stretch_body/pull/272
+-------------------------------------------
+
+Collecting information...
+[ERROR] [hello-motor-arm]: SerialException(2): could not open port /dev/hello-motor-arm: [Errno 2] No such file or directory: '/dev/hello-motor-arm'
+[WARNING] [hello-motor-arm]: Unable to open serial port for device /dev/hello-motor-arm
+Unable to communicate with device hello-motor-arm
+[ERROR] [hello-motor-right-wheel]: SerialException(2): could not open port /dev/hello-motor-right-wheel: [Errno 2] No such file or directory: '/dev/hello-motor-right-wheel'
+[WARNING] [hello-motor-right-wheel]: Unable to open serial port for device /dev/hello-motor-right-wheel
+Unable to communicate with device hello-motor-right-wheel
+[ERROR] [hello-motor-left-wheel]: SerialException(2): could not open port /dev/hello-motor-left-wheel: [Errno 2] No such file or directory: '/dev/hello-motor-left-wheel'
+[WARNING] [hello-motor-left-wheel]: Unable to open serial port for device /dev/hello-motor-left-wheel
+Unable to communicate with device hello-motor-left-wheel
+[ERROR] [wacc]: SerialException(2): could not open port /dev/hello-wacc: [Errno 2] No such file or directory: '/dev/hello-wacc'
+[WARNING] [wacc]: Unable to open serial port for device /dev/hello-wacc
+Unable to communicate with device hello-wacc
+[ERROR] [hello-motor-lift]: SerialException(2): could not open port /dev/hello-motor-lift: [Errno 2] No such file or directory: '/dev/hello-motor-lift'
+[WARNING] [hello-motor-lift]: Unable to open serial port for device /dev/hello-motor-lift
+Unable to communicate with device hello-motor-lift
+WARNING: Device hello-motor-arm is not valid. Unable to attempt the firmware update. Skipping device.
+WARNING: Device hello-motor-right-wheel is not valid. Unable to attempt the firmware update. Skipping device.
+WARNING: Device hello-motor-left-wheel is not valid. Unable to attempt the firmware update. Skipping device.
+WARNING: Device hello-wacc is not valid. Unable to attempt the firmware update. Skipping device.
+WARNING: Device hello-motor-lift is not valid. Unable to attempt the firmware update. Skipping device.
+Collecting information........
+
+Collecting information...
+WARNING:---------------------------------------------------------------------------------
+WARNING: Compatible version of arduino_cli not installed. 
+Requires version b'0.31.0'. Installed version of b'1.2.2'
+Install now? [y/N]: y
+Installing in /home/hello-robot/.local/bin/
+ARCH=64bit
+OS=Linux
+Using curl as download tool
+Downloading https://downloads.arduino.cc/arduino-cli/arduino-cli_0.31.0_Linux_64bit.tar.gz
+arduino-cli  Version: 0.31.0 Commit: 940c9457 Date: 2023-02-22T16:15:52Z installed successfully in /home/hello-robot/.local/bin/
+Config file written to: /home/hello-robot/.arduino15/arduino-cli.yaml
+
+
+A new release of Arduino CLI is available: 0.31.0 → 1.2.2
+https://arduino.github.io/arduino-cli/latest/installation/#latest-packages
+Platform arduino:samd@1.6.21 already installed
+########################################## UPDATING FIRMWARE TO... ###########################################
+HELLO-PIMU                | Reinstalling Pimu.v0.8.3p6               
+
+------------------------------------------------
+WARNING: (1) Updating robot firmware should only be done by experienced users
+WARNING: (2) Do not have other robot processes running during update
+WARNING: (3) Leave robot powered on during update
+------------------------------------------------
+Proceed with update?? [y/N]: y
+[sudo] password for hello-robot: 
+
+
+
+
+
+#################################################### HELLO-PIMU  #####################################################
+#################################### HELLO-PIMU |  COMPILE AND FLASH FIRMWARE... #####################################
+Looking for device hello-pimu on bus
+Waiting for device hello-pimu to return to bus.
+Starting programming. This will take about 5s...
+Success in firmware compile
+#### Trying To place hello-pimu in bootloader mode #######
+Success hello-pimu is in bootloader mode on /dev/ttyACM1, Now Flashing!
+Success Flashing hello-pimu
+################################ HELLO-PIMU |   CHECK #1 IF DEVICE RETURNS TO BUS... #################################
+Checking that device hello-pimu returned to bus 
+It may take several minutes to appear on the USB bus.
+Waiting for device hello-pimu to return to bus.
+Device hello-pimu returned to bus after 0.107615 seconds.
+##################################### HELLO-PIMU |   CHECK IF ESTABLISH COMMS... #####################################
+PASS: Established comms with device HELLO-PIMU 
+##################################HELLO-PIMU |  CHECK FOR CORRECT VERSION UPDATE... ##################################
+Collecting information...
+PASS: HELLO-PIMU                | Installed Pimu.v0.8.3p6                            | Target Pimu.v0.8.3p6                            
+#####################################HELLO-PIMU |  RESTORING CALIBRATION DATA... #####################################
+Successful flash of device calibration
+####################################HELLO-PIMU |  CHECK #2 IF RETURNED TO BUS... #####################################
+Checking that device hello-pimu returned to bus 
+It may take several minutes to appear on the USB bus.
+Waiting for device hello-pimu to return to bus.
+Device hello-pimu returned to bus after 0.007416 seconds.
+
+
+
+
+
+############################################# CONGRATULATIONS... #############################################
+HELLO-PIMU                | No issues encountered. Firmware updated to Pimu.v0.8.3p6.
+
