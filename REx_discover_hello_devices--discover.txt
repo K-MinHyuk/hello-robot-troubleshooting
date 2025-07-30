@@ -1,0 +1,143 @@
+hello-robot@stretch-re2-2068:~$ REx_discover_hello_devices.py --discover
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Found 6 Arduino devices:
+{'/dev/ttyACM0': {'model': 'Hello_Stepper',
+                  'model_id': '804d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/tty/ttyACM0',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'},
+ '/dev/ttyACM1': {'model': 'Hello_Pimu',
+                  'model_id': '804d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.2/1-2.2:1.0/tty/ttyACM1',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'},
+ '/dev/ttyACM2': {'model': 'Arduino_Zero',
+                  'model_id': '004d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.1/1-4.1:1.0/tty/ttyACM2',
+                  'serial': None,
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'},
+ '/dev/ttyACM3': {'model': 'Arduino_Zero',
+                  'model_id': '004d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.4/1-4.4:1.0/tty/ttyACM3',
+                  'serial': None,
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'},
+ '/dev/ttyACM4': {'model': 'Arduino_Zero',
+                  'model_id': '004d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.3/1-4.3.2/1-4.3.2:1.0/tty/ttyACM4',
+                  'serial': None,
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'},
+ '/dev/ttyACM5': {'model': 'Hello_Wacc',
+                  'model_id': '804d',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.3/1-4.3.3/1-4.3.3.3/1-4.3.3.3:1.0/tty/ttyACM5',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'Arduino_LLC',
+                  'vendor_id': '2341'}}
+
+
+Found 1 hello_stepper devices.
+Unable to find the correct no. hello_stepper devices.
+Found hello-pimu serial: I removed the serial number
+Found hello-wacc serial: I removed the serial number
+Found 2 dxl devices:
+{'/dev/ttyUSB0': {'model': 'FT232R_USB_UART',
+                  'model_id': '6001',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.1/1-2.1.2/1-2.1.2:1.0/ttyUSB0/tty/ttyUSB0',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'FTDI',
+                  'vendor_id': '0403'},
+ '/dev/ttyUSB1': {'model': 'FT232R_USB_UART',
+                  'model_id': '6001',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.3/1-4.3.3/1-4.3.3.2/1-4.3.3.2:1.0/ttyUSB1/tty/ttyUSB1',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'FTDI',
+                  'vendor_id': '0403'}}
+WARNING: The Lift would drop, make sure the clamp is underneath lift. Then hit ENTER
+Move the Lift joint manually to another position and place the clamp underneath when done. Then hit ENTER
+More than one motor or none moved
+Unable to find Lift Serial
+Move the Arm joint manually to another position and hit ENTER
+More than one motor or none moved
+Unable to find Arm Serial
+Move the Base backward manually to another position and hit ENTER
+No. motors moved=0. Wrong number of motors or none moved
+
+Scanning for servo at port: /dev/ttyUSB1
+----------------------------------------------------------
+Checking at ID 0 and baud 115200
+Checking at ID 1 and baud 115200
+Checking at ID 2 and baud 115200
+Checking at ID 3 and baud 115200
+Checking at ID 4 and baud 115200
+Checking at ID 5 and baud 115200
+Checking at ID 6 and baud 115200
+Checking at ID 7 and baud 115200
+Checking at ID 8 and baud 115200
+Checking at ID 9 and baud 115200
+Checking at ID 10 and baud 115200
+Checking at ID 11 and baud 115200
+Checking at ID 12 and baud 115200
+Checking at ID 13 and baud 115200
+Found servo at ID 13 and Baud 115200
+Checking at ID 14 and baud 115200
+Found servo at ID 14 and Baud 115200
+Checking at ID 15 and baud 115200
+Found servo at ID 15 and Baud 115200
+Checking at ID 16 and baud 115200
+Found servo at ID 16 and Baud 115200
+Checking at ID 17 and baud 115200
+Checking at ID 18 and baud 115200
+Checking at ID 19 and baud 115200
+FOUND Servo IDs: [13, 14, 15, 16] at port: /dev/ttyUSB1
+
+Scanning for servo at port: /dev/ttyUSB0
+----------------------------------------------------------
+Checking at ID 0 and baud 115200
+Checking at ID 1 and baud 115200
+Checking at ID 2 and baud 115200
+Checking at ID 3 and baud 115200
+Checking at ID 4 and baud 115200
+Checking at ID 5 and baud 115200
+Checking at ID 6 and baud 115200
+Checking at ID 7 and baud 115200
+Checking at ID 8 and baud 115200
+Checking at ID 9 and baud 115200
+Checking at ID 10 and baud 115200
+Checking at ID 11 and baud 115200
+Found servo at ID 11 and Baud 115200
+Checking at ID 12 and baud 115200
+Found servo at ID 12 and Baud 115200
+Checking at ID 13 and baud 115200
+Checking at ID 14 and baud 115200
+Checking at ID 15 and baud 115200
+Checking at ID 16 and baud 115200
+Checking at ID 17 and baud 115200
+Checking at ID 18 and baud 115200
+Checking at ID 19 and baud 115200
+FOUND Servo IDs: [11, 12] at port: /dev/ttyUSB0
+
+
+Found hello-dynamixel-head serial: I removed the serial number
+Found hello-dynamixel-wrist serial: I removed the serial number
+Assigning Stepper motor SN to robot....
+Unable to find SN of hello-motor-lift. Skipping.
+Unable to find SN of hello-motor-arm. Skipping.
+Unable to find SN of hello-motor-right-wheel. Skipping.
+Unable to find SN of hello-motor-left-wheel. Skipping.
+Assigning Pimu and Wacc SN to robot....
+Overwriting existing entry...
+Overwriting existing entry...
+UDEV rules and stretch configuration files specific to arduino devices updated
+Assigning FTDI devices SN to robot....
+Overwriting existing entry...
+Overwriting existing entry...
+UDEV rules and stretch configuration files specific to Dynamixels updated
+
+Pushing Udev files to /etc/udev/rules.d/
+

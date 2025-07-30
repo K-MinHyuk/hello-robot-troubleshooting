@@ -1,0 +1,88 @@
+hello-robot@stretch-re2-2068:~$ REx_discover_hello_devices.py --discover --dynamixels
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+usage: REx_discover_hello_devices.py [-h] [--discover | --list_tty] [--arduino] [--dynamixel]
+REx_discover_hello_devices.py: error: unrecognized arguments: --dynamixels
+hello-robot@stretch-re2-2068:~$ REx_discover_hello_devices.py --discover --dynamixel
+For use with S T R E T C H (R) from Hello Robot Inc.
+---------------------------------------------------------------------
+
+Found 2 dxl devices:
+{'/dev/ttyUSB0': {'model': 'FT232R_USB_UART',
+                  'model_id': '6001',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2.1/1-2.1.2/1-2.1.2:1.0/ttyUSB0/tty/ttyUSB0',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'FTDI',
+                  'vendor_id': '0403'},
+ '/dev/ttyUSB1': {'model': 'FT232R_USB_UART',
+                  'model_id': '6001',
+                  'path': '/devices/pci0000:00/0000:00:14.0/usb1/1-4/1-4.3/1-4.3.3/1-4.3.3.2/1-4.3.3.2:1.0/ttyUSB1/tty/ttyUSB1',
+                  'serial': 'I removed the serial number',
+                  'vendor': 'FTDI',
+                  'vendor_id': '0403'}}
+
+Scanning for servo at port: /dev/ttyUSB1
+----------------------------------------------------------
+Checking at ID 0 and baud 115200
+Checking at ID 1 and baud 115200
+Checking at ID 2 and baud 115200
+Checking at ID 3 and baud 115200
+Checking at ID 4 and baud 115200
+Checking at ID 5 and baud 115200
+Checking at ID 6 and baud 115200
+Checking at ID 7 and baud 115200
+Checking at ID 8 and baud 115200
+Checking at ID 9 and baud 115200
+Checking at ID 10 and baud 115200
+Checking at ID 11 and baud 115200
+Checking at ID 12 and baud 115200
+Checking at ID 13 and baud 115200
+Found servo at ID 13 and Baud 115200
+Checking at ID 14 and baud 115200
+Found servo at ID 14 and Baud 115200
+Checking at ID 15 and baud 115200
+Found servo at ID 15 and Baud 115200
+Checking at ID 16 and baud 115200
+Found servo at ID 16 and Baud 115200
+Checking at ID 17 and baud 115200
+Checking at ID 18 and baud 115200
+Checking at ID 19 and baud 115200
+FOUND Servo IDs: [13, 14, 15, 16] at port: /dev/ttyUSB1
+
+Scanning for servo at port: /dev/ttyUSB0
+----------------------------------------------------------
+Checking at ID 0 and baud 115200
+Checking at ID 1 and baud 115200
+Checking at ID 2 and baud 115200
+Checking at ID 3 and baud 115200
+Checking at ID 4 and baud 115200
+Checking at ID 5 and baud 115200
+Checking at ID 6 and baud 115200
+Checking at ID 7 and baud 115200
+Checking at ID 8 and baud 115200
+Checking at ID 9 and baud 115200
+Checking at ID 10 and baud 115200
+Checking at ID 11 and baud 115200
+Found servo at ID 11 and Baud 115200
+Checking at ID 12 and baud 115200
+Found servo at ID 12 and Baud 115200
+Checking at ID 13 and baud 115200
+Checking at ID 14 and baud 115200
+Checking at ID 15 and baud 115200
+Checking at ID 16 and baud 115200
+Checking at ID 17 and baud 115200
+Checking at ID 18 and baud 115200
+Checking at ID 19 and baud 115200
+FOUND Servo IDs: [11, 12] at port: /dev/ttyUSB0
+
+
+Found hello-dynamixel-head serial: I removed the serial number
+Found hello-dynamixel-wrist serial: I removed the serial number
+Assigning FTDI devices SN to robot....
+Overwriting existing entry...
+Overwriting existing entry...
+UDEV rules and stretch configuration files specific to Dynamixels updated
+
+Pushing Udev files to /etc/udev/rules.d/
+
